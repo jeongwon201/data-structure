@@ -7,11 +7,12 @@
 큐는 가장 먼저 들어온 자료가 가장 먼저 나가는 구조의 형태로 구현된다.
 <br />
 
-<div style="text-align: center;">
+<div align="center">
     <img src="img/img.png" width="600px" />
     <br />
     큐
 </div>
+<br />
 <br />
 
 큐는 배열과 연결 리스트로 구현이 가능하다.
@@ -21,11 +22,12 @@
 원소를 재배치하지 않으면, 데이터가 없음에도 큐를 포화 상태로 인식하여 삽입 연산을 수행하지 않는다.   
 <br />
 
-<div style="text-align: center;">
+<div align="center">
     <img src="img/img_1.png" width="600px" />
     <br />
     큐의 원소를 재배치하지 않고 삽입하는 경우
 </div>
+<br />
 <br />
 
 이러한 큐를 **선형 큐**라고 하며, 선형 큐의 문제를 해결하기 위해 재배치를 수행하게 되면 오버헤드가 발생한다. 
@@ -37,11 +39,12 @@
 **원형 큐**란 배열의 처음과 끝을 논리적으로 연결되어있다고 간주한 큐이다.
 <br />
 
-<div style="text-align: center;">
+<div align="center">
     <img src="img/img_2.png" width="400px" />
     <br />
     원형 큐
 </div>
+<br />
 <br />
 
 배열의 처음과 끝이 연결되어있다고 간주하여, 재배치 과정이 필요없어지게 된다.   
