@@ -3,11 +3,12 @@
 Deque 은 Double-Ended Queue 의 줄임말로, 양쪽으로 데이터의 삽입가 삭제를 수행하는 큐 자료구조를 의미한다.
 <br />
 
-<div style="text-align: center;">
+<div align="center">
     <img src="img/img.png" width="600px" />
     <br />
     덱
 </div>
+<br />
 <br />
 
 덱은 어떤 방향으로 입력하고 출력하는지에 따라 스택이나 큐로 사용할 수 있다.   
