@@ -9,36 +9,40 @@ ArrayList 는 배열을 기반으로 하여 논리적인 순서와 물리적인 
 
 ## 데이터의 삽입
 데이터를 맨 뒤에 삽입할 경우 배열의 크기를 증가시키고 데이터를 삽입한다.
-<div style="text-align: center;">
+<div align="center">
     <img src="img/img.png" width="500px" />
     <br />
     데이터 삽입(1)
 </div>
-
+<br />
 <br />
 
 데이터를 중간에 삽입할 경우 배열의 크기를 증가시키고 삽입하려는 위치를 기준으로 이후 데이터를 한 칸씩 뒤로 이동시킨 후 데이터를 삽입한다.
-<div style="text-align: center;">
+<div align="center">
     <img src="img/img_1.png" width="500px" />
     <br />
     데이터 삽입(2)
 </div>
 <br />
+<br />
 
 ## 데이터의 삭제
 마지막 데이터를 삭제할 경우 삭제한다.
-<div style="text-align: center;">
+<div align="center">
     <img src="img/img_2.png" width="500px" />
     <br />
-    데이터 삽입(1)
+    데이터 삭제(1)
 </div>
+<br />
+<br />
 
 중간에 있는 데이터를 삭제할 경우 데이터 삭제 후 삭제된 데이터의 인덱스를 기준으로 이후 데이터를 한 칸씩 앞으로 옮긴다.
-<div style="text-align: center;">
+<div align="center">
     <img src="img/img_3.png" width="500px" />
     <br />
-    데이터 삽입(1)
+    데이터 삭제(2)
 </div>
+<br />
 <br />
 
 삭제된 데이터의 공간은 빈 공간으로 남아있게 된다.
