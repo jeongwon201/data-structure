@@ -1,39 +1,60 @@
 package com.datastructure.tree.code;
 
-import org.w3c.dom.Node;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class Tree {
-    
+
     class Node {
+        Object item;
         Node parent;
         List<Node> child;
-        Node() {
-            child = new ArrayList<>();
-        }
-
-        public void setParent(Node parent) {
-            this.parent = parent;
-        }
-
-        public void setChild(List<Node> child) {
-            this.child = child;
-        }
-    }
-    List<Node> nodes;
-
-    public Tree() {
-        this.nodes = new ArrayList<>();
     }
 
-    public List<Node> getNodes() {
-        return nodes;
+    Node root;
+
+    Tree(Object item) {
+        root = new Node();
+        root.item = item;
     }
 
-    public void addNode(Node node) {
-        nodes.add(node);
+    Node addNode(Node node, Object item) {
+        Node newNode = new Node();
+        newNode.item = item;
+        newNode.parent = node;
+
+        if (node.child == null) {
+            node.child = new ArrayList<>();
+        }
+
+        node.child.add(newNode);
+
+        return newNode;
+    }
+
+    void deleteNode(Node node) {
+        node.parent.child.remove(node);
+    }
+
+    void print(Node node) {
+        if (node.parent == null) {
+            System.out.println(node.item + "의 Parent: 루트 노드는 최상위 노드로 Parent 노드가 존재하지 않습니다.");
+        } else {
+            System.out.println(node.item + "의 Parent: " + node.parent.item);
+        }
+
+        System.out.print(node.item + "의 Child: ");
+
+        if (node.child == null) {
+            System.out.println("Child 없음");
+        } else {
+            for (Node child : node.child) {
+                System.out.print(child.item + " ");
+            }
+
+            System.out.println();
+        }
+
+        System.out.println();
     }
 }
-

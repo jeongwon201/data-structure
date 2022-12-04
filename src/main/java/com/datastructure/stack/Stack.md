@@ -10,7 +10,7 @@
 <br />
 
 <div style="text-align: center;">
-    <img src="img.png" width="800px" />
+    <img src="img/img.png" width="800px" />
     <br />
     스택
 </div>

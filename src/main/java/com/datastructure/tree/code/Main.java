@@ -1,34 +1,37 @@
 package com.datastructure.tree.code;//package com.algorithm.datastructure.tree;
-//
-//
-//import java.util.Arrays;
-//
-//public class Main {
-//    public static void main(String[] args) {
-//        Node nodeA = new Node();
-//        Node nodeB = new Node();
-//        Node nodeC = new Node();
-//        Node nodeD = new Node();
-//        Node nodeE = new Node();
-//        Node nodeF = new Node();
-//        Node nodeG = new Node();
-//        Node nodeH = new Node();
-//
-//        nodeA.setChild(Arrays.asList(nodeB, nodeC, nodeD));
-//
-//        nodeB.setParent(nodeA);
-//        nodeB.setChild(Arrays.asList(nodeB, nodeC, nodeD));
-//
-//        nodeC.setParent(nodeA);
-//
-//        nodeD.setParent(nodeA);
-//        nodeD.setChild(Arrays.asList(nodeB, nodeC, nodeD));
-//
-//        nodeE.setParent(nodeB);
-//        nodeF.setParent(nodeB);
-//        nodeG.setParent(nodeD);
-//        nodeH.setParent(nodeD);
-//
-//        nodeA.print();
-//    }
-//}
+
+
+public class Main {
+    public static void main(String[] args) {
+        tree();
+    }
+
+    static void tree() {
+        System.out.println("--------------- 트리 ---------------");
+        Tree tree = new Tree("루트");
+        tree.print(tree.root);
+
+        Tree.Node nodeA = tree.addNode(tree.root, "노드 A");
+        Tree.Node nodeB = tree.addNode(tree.root, "노드 B");
+        Tree.Node nodeC = tree.addNode(tree.root, "노드 C");
+
+        Tree.Node nodeD = tree.addNode(nodeA, "노드 D");
+        Tree.Node nodeE = tree.addNode(nodeA, "노드 E");
+
+        Tree.Node nodeF = tree.addNode(nodeB, "노드 F");
+        Tree.Node nodeG = tree.addNode(nodeB, "노드 G");
+
+        Tree.Node nodeH = tree.addNode(nodeC, "노드 H");
+        Tree.Node nodeI = tree.addNode(nodeC, "노드 I");
+
+        tree.print(nodeA);
+        tree.print(nodeB);
+        tree.print(nodeC);
+        tree.print(nodeD);
+        tree.print(nodeE);
+        tree.print(nodeF);
+        tree.print(nodeG);
+        tree.print(nodeH);
+        tree.print(nodeI);
+    }
+}
