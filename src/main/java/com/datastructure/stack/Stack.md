@@ -9,11 +9,17 @@
 스택에서는 데이터의 삽입을 **push**, 삭제를 **pop**, 조회를 **peek** 이라고 표현한다.
 <br />
 
+<<<<<<< HEAD
 <div style="text-align: center;">
     <img src="img/img.png" width="800px" />
+=======
+<div align="center">
+    <img src="img.png" width="800px" />
+>>>>>>> 8b50b48caaae21b1068acc3722631814106b94a6
     <br />
     스택
 </div>
+<br />
 <br />
 
 스택은 **배열**과 **연결 리스트**로 구현할 수 있다.

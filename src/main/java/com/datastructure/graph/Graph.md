@@ -2,12 +2,12 @@
 
 그래프 는 비선형 자료 구조로 객체 간 관계를 시각적으로 나타낼 수 있는 구조를 나타낸다.
 
-<div style="text-align: center;">
+<div align="center">
     <img src="img/img.png" width="300px" />
     <br />
     그래프
 </div>
-
+<br />
 <br />
 
 그래프는 정점과 간선으로 이루어져있다.   
@@ -35,11 +35,11 @@
 - **완전 그래프**: 모든 정점 간에 간선이 존재하는 그래프
 
 그래프는 다음과 같이 세 가지 종류가 있다.
-<div style="text-align: center;">
-    <img src="img/img_1.png" width="600px" />
+<div align="center">
+    <img src="img/img_1.png" width="1000px" />
     <br />
 </div>
-
+<br />
 <br />
 
 **무방향 그래프 (Undirected Graph)**   
