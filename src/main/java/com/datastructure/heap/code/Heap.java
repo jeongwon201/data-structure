@@ -13,6 +13,9 @@ public class Heap {
     void add(Integer item) {
         int last = 1;
         while (true) {
+            if(last > heap.length) {
+                throw new RuntimeException("힙의 크기를 초과했습니다.");
+            }
             if (heap[last] == null) {
                 break;
             }
@@ -45,7 +48,7 @@ public class Heap {
         }
 
         int last = 1;
-        while (heap[last + 1] != null) {
+        while (last + 1 < heap.length && heap[last + 1] != null) {
             last++;
         }
 
